@@ -1,4 +1,4 @@
-#!/home/user/env-name/network-sniffer/bin/python
+#!/home/user/env-name/bin/python
 
 from scapy.all import *
 from scapy.layers.dot11 import Dot11Beacon, Dot11, Dot11Elt
