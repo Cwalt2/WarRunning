@@ -1,0 +1,39 @@
+[+] New Network Found
+SSID            : <Hidden>
+BSSID           : ff:ff:ff:ff:ff:ff
+Signal Strength : -52 dBm
+Channel         : 10
+Rates           : 1.0 2.0 5.5 11.0 18.0 24.0 36.0 54.0 6.0 9.0 12.0 48.0 Mbps
+Encryption      : WPA2/PSK
+
+[+] New Network Found
+SSID            : <Hidden>
+BSSID           : ff:ff:ff:ff:ff:ff
+Signal Strength : -59 dBm
+Channel         : 10
+Rates           : 1.0 2.0 5.5 11.0 18.0 24.0 36.0 54.0 6.0 9.0 12.0 48.0 Mbps
+Encryption      : WPA2/PSK
+
+[+] New Network Found
+SSID            : <Hidden>
+BSSID           : ff:ff:ff:ff:ff:ff
+Signal Strength : -58 dBm
+Channel         : 7
+Rates           : 1.0 2.0 5.5 11.0 9.0 18.0 36.0 54.0 6.0 12.0 24.0 48.0 Mbps
+Encryption      : WPA2/PSK
+
+[+] New Network Found
+SSID            : <Hidden>
+BSSID           : ff:ff:ff:ff:ff:ff
+Signal Strength : -67 dBm
+Channel         : 10
+Rates           : 1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 24.0 36.0 48.0 54.0 Mbps
+Encryption      : WPA2/PSK
+
+[+] New Network Found
+SSID            : <Hidden>
+BSSID           : ff:ff:ff:ff:ff:ff
+Signal Strength : -71 dBm
+Channel         : 10
+Rates           : 1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 24.0 36.0 48.0 54.0 Mbps
+Encryption      : OPN
