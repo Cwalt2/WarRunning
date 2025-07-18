@@ -14,6 +14,8 @@ This project only works on Linux based systems as aircrack-ng is not compatible 
 - [ ] example video
 - [ ] auto cracking script
 - [ ] attack examples
+- [ ] Rust implementation
+- [ ] threading?
 
 ## 📁 Features
 
