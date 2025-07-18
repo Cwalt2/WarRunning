@@ -1,4 +1,4 @@
-#!/home/user/env-name/network-sniffer/bin/python
+#!/home/user/env-name/bin/python
 # Original creator: SleepTheGod
 
 from scapy.all import *
