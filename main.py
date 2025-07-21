@@ -15,12 +15,25 @@ log_file_path = os.path.join(log_dir, f"wifi_scan_{timestamp}.log")
 # Track discovered networks by BSSID
 networks = {}
 
+# Grabs frequency (2.4 GHz/5 GHz) from a network
+def channel_to_frequency(channel):
+    channel = int(channel)
+    if 1 <= channel <= 14:
+        return 2407 + (channel * 5)
+    elif 36 <= channel <= 165:
+        return 5000 + (channel * 5)
+    elif 1 <= channel <= 233:  # 6 GHz band (optional)
+        return 5950 + (channel * 5)
+    else:
+        return None
+
 def packet_handler(packet):
     if packet.haslayer(Dot11Beacon):
         ssid = packet[Dot11Elt].info.decode(errors="ignore")
         bssid = packet[Dot11].addr2
         stats = packet[Dot11Beacon].network_stats()
-        channel = stats.get("channel")
+        channel = ord(packet[Dot11Elt:3].info)
+        freq = channel_to_frequency(channel)
         signal = packet.dBm_AntSignal
         rates = stats.get("rates")
         crypto = ', '.join(stats.get("crypto", []))
@@ -40,6 +53,7 @@ def packet_handler(packet):
                 f"BSSID           : {bssid}\n"
                 f"Signal Strength : {signal} dBm\n"
                 f"Channel         : {channel}\n"
+                f"Freq:           : {freq} MHz\n"
                 f"Rates           : {' '.join(map(str, rates))} Mbps\n"
                 f"Encryption      : {crypto}\n"
             )

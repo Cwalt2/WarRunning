@@ -82,7 +82,7 @@ chmod +x main.py
 
 # you may need to modify the line at the top of this file
 sudo ./main.py
-# ex. !/home/user/env-name/network-sniffer/bin/python
+# ex. #!/home/user/env-name/network-sniffer/bin/python
 ```
 
 After running the python script you should see the program scanning for networks in your immediate area
@@ -93,6 +93,7 @@ SSID            : <Hidden>
 BSSID           : ff:ff:ff:ff:ff:ff
 Signal Strength : -52 dBm
 Channel         : 10
+Freq            : 2457 MHz
 Rates           : 1.0 2.0 5.5 11.0 18.0 24.0 36.0 54.0 6.0 9.0 12.0 48.0 Mbps
 Encryption      : WPA2/PSK
 
@@ -101,6 +102,7 @@ SSID            : <Hidden>
 BSSID           : ff:ff:ff:ff:ff:ff
 Signal Strength : -59 dBm
 Channel         : 10
+Freq            : 2457 MHz
 Rates           : 1.0 2.0 5.5 11.0 18.0 24.0 36.0 54.0 6.0 9.0 12.0 48.0 Mbps
 Encryption      : WPA2/PSK
 
@@ -109,6 +111,7 @@ SSID            : <Hidden>
 BSSID           : ff:ff:ff:ff:ff:ff
 Signal Strength : -58 dBm
 Channel         : 7
+Freq            : 2457 MHz
 Rates           : 1.0 2.0 5.5 11.0 9.0 18.0 36.0 54.0 6.0 12.0 24.0 48.0 Mbps
 Encryption      : WPA2/PSK
 
@@ -117,6 +120,7 @@ SSID            : <Hidden>
 BSSID           : ff:ff:ff:ff:ff:ff
 Signal Strength : -67 dBm
 Channel         : 10
+Freq            : 2457 MHz
 Rates           : 1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 24.0 36.0 48.0 54.0 Mbps
 Encryption      : WPA2/PSK
 
@@ -125,6 +129,7 @@ SSID            : <Hidden>
 BSSID           : ff:ff:ff:ff:ff:ff
 Signal Strength : -71 dBm
 Channel         : 10
+Freq            : 2457 MHz
 Rates           : 1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 24.0 36.0 48.0 54.0 Mbps
 Encryption      : OPN
 ```
