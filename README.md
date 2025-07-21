@@ -6,22 +6,16 @@
 > may be a violation of local, state, or federal law.
 > The author(s) are not responsible for any misuse of this tool.
 
-This is a project I made because of my interest in networking/pentesting/security techniques while also attempting to blend in running.
-This project only works on Linux based systems as aircrack-ng is not compatible on Windows
+## Description
 
-## TODO
-
-- [ ] example video
-- [ ] auto cracking script
-- [ ] attack examples
-- [ ] Rust implementation
-- [ ] threading?
+This program is a lightweight and expandable passive network scanner. This can be headless with the correct setup and is compatible with most linux distributions (NOT compatible with Windows machines). All scripts can be run without internet connectivity besides a scanning WiFi card. Logs are saved with network information containing the BSSID, SSID, Signal Strength, Channel, Channel Frequency, Rates, and Encryption.
 
 ## 📁 Features
 
-- Feature 1 – Scans continously for Wi-Fi networks
-- Feature 2 – Availability on ARM/mobile devices
-- Feature 3 – Store individual network logs for later analysis
+- Scans continously for Wi-Fi networks
+- Availability on ARM/mobile devices
+- Store individual network logs for later analysis
+- Easy headless setup
 
 ## 💻 Technologies Used
 
@@ -31,6 +25,7 @@ This project only works on Linux based systems as aircrack-ng is not compatible 
 - Raspberry Pi 4/Zero W 2
 - Aircrack-ng suite
 - Pi OS lite (64-bit)
+- INIU Power Bank (5V/3A - 10000mAh/37Wh)
 
 ## Hard Requirements
 
@@ -133,6 +128,30 @@ Freq            : 2457 MHz
 Rates           : 1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 24.0 36.0 48.0 54.0 Mbps
 Encryption      : OPN
 ```
+
+## Start Scripts
+
+`start.sh` autostarts the WarRunning script in the background and continues running despite losing connection
+The script saves logs to a output file in the logs folder.
+> NOTE: this will overwrite after every execution
+
+In order to execute this script you will need to make it executable first
+
+```bash
+
+chmod +x start.sh
+sudo ./start.sh
+```
+
+## TODO
+
+- [ ] Example video
+- [ ] Auto cracking script
+- [ ] Attack examples
+- [ ] Rust implementation
+- [ ] Threading?
+- [x] Auto start/stop scripts
+- [ ] Test frequency detection in depth
 
 ## Extras
 
