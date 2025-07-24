@@ -143,15 +143,37 @@ chmod +x start.sh
 sudo ./start.sh
 ```
 
+## Real World Testing
+
+Driving around for the test I got more than 50 networks with different SSIDs and BSSIDs. I even found vulnerable networks that were marked as hidden but still had no password or security.
+In my testing I found multiple unsecured printers/business APs/guest networks. All of which are a huge risk and easy attack vector.
+
+### Errors to fix during this round
+
+- [ ] When faced with weird beacons names with escape characters or names longer than 132 characters it would crash the script.
+- [ ] No indication of a failed WiFi card setup leading to scanning for an hour with zero logs to look back on
+- [ ] No error handling when scanning leading to a catastrophic crash
+- [ ] No error logs
+- [ ] Channel Frequency function is not detecting 5G, I think it is a driver issue with my WiFi card
+- [ ] Hard to read logs
+- [ ] try/catch blocks to prevent crashing
+
+### Things to be cautious about
+
+- My WiFi card and battery got super hot during testing and led to some throttling which can be exacerbated on warm days
+- Repeating SSID but changing BSSID
+
 ## TODO
 
 - [ ] Example video
 - [ ] Auto cracking script
+- [ ] GPS/location tracking for scanned networks
 - [ ] Attack examples
 - [ ] Rust implementation
 - [ ] Threading?
 - [x] Auto start/stop scripts
 - [ ] Test frequency detection in depth
+- [ ] Fix errors
 
 ## Extras
 
